@@ -22,7 +22,7 @@
 				<h2>温馨提示</h2>
 				<p class="text-detail">请将您的二代身份证，放置在下方身份证读卡区，读卡完成后需要身份信息监测，请耐心等待！</p>
 				<div class="card">
-					<input class="cardnumber" type="text" placeholder="请输入您的身份证号码">
+					<input class="cardnumber" type="text" placeholder="请输入您的身份证号码" />
 
 					<div class="cardbutton">查询</div>
 				</div>
@@ -65,6 +65,28 @@
 					<img src="images/tip3.png">
 				</div>
 			</div>
+			<!-- 采集头像信息 -->
+			<div class="face-message" style="display:none">
+				<h3 class="face-title">开始拍照，请看<span>上方</span>摄像头</h3>
+				<div class="camera">
+					摄像头拍照
+				</div>
+				<p class="face-warn">1、请勿佩戴眼睛 2、保持人像居中</p>
+			</div>
+			<!-- 制证照片采集 -->
+			<div class="photoId" style="display:none">
+				<h2>温馨提示</h2>
+				<p class="text-detail">
+					请将二代身份照片回执条形码至于下方条形码扫描区！
+				</p>
+				<form onsubmit="return false">
+					<div class="card">
+						<input class="photonumber" type="text" placeholder="请输入您的照片流水号" />
+
+						<div class="photobutton">查询</div>
+					</div>
+				</form>
+			</div>
 		</div>
 		<div class="gotoHome">
 			<div class="hometip">
@@ -73,7 +95,7 @@
 			<span>返回主页面</span>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="js/idcard.js"></script>
 	<script type="text/javascript">
 		new Init()
